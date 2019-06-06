@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import image from "./assets/arrows.svg";
+import image from "../assets/arrows.svg";
 
 const IntroPage = () => {
   return (
