@@ -4,7 +4,7 @@
   "main": "src/server/index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "yarn start build && node src/server/index.js",
+    "start": "yarn build && node src/server/index.js",
     "client": "webpack-dev-server --mode development",
     "server": "nodemon src/server/index.js",
     "dev": "concurrently \"yarn server\" \"yarn client\"",
