@@ -3,16 +3,29 @@ import { Route, Switch } from "react-router-dom";
 import ReactCSSTransitionReplace from "react-css-transition-replace";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHammer, faTools } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBriefcase,
+  faGraduationCap,
+  faHammer,
+  faTools
+} from "@fortawesome/free-solid-svg-icons";
 import { faFileAlt } from "@fortawesome/free-regular-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import IntroPage from "./IntroPage";
 import "./styling/App.scss";
-import Home from "./Home";
-import Projects from "./Projects";
-import Resume from "./Resume";
+import IntroPage from "./components/IntroPage";
+import Home from "./components/Home";
+import Projects from "./components/Projects";
+import Resume from "./components/Resume";
 
-library.add(faLinkedin, faGithub, faFileAlt, faHammer, faTools);
+library.add(
+  faLinkedin,
+  faGithub,
+  faBriefcase,
+  faFileAlt,
+  faGraduationCap,
+  faHammer,
+  faTools
+);
 
 const App = () => {
   return (
