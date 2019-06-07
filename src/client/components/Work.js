@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import BankofAmerica from "../assets/icons/BankofAmerica";
 import Symetra from "../assets/icons/Symetra";
 import launchLogo from "../assets/launchLogo.png";
@@ -8,18 +9,39 @@ const Work = () => {
     <div className="accordion mt-5" id="accordionOne">
       <div className="card border-primary bg-dark">
         <div className="card-header m-0 p-0" id="headingOne">
-          <h4 className="mb-0">
-            <button
-              className="btn btn-link text-white"
-              type="button"
-              data-toggle="collapse"
-              data-target="#collapseOne"
-              aria-expanded="true"
-              aria-controls="collapseOne"
-            >
-              <Symetra />
-            </button>
-          </h4>
+          <div className="d-flex flex-row">
+            <div>
+              <h4 className="mb-0">
+                <button
+                  className="btn btn-link text-white pr-0"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <Symetra />
+                </button>
+              </h4>
+            </div>
+            <div className="align-self-end">
+              <h4>
+                <button
+                  className="btn btn-link collapsed text-secondary pl-0"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <FontAwesomeIcon
+                    className="text-right"
+                    icon={["fas", "plus-circle"]}
+                  />
+                </button>
+              </h4>
+            </div>
+          </div>
         </div>
 
         <div
@@ -52,18 +74,39 @@ const Work = () => {
 
       <div className="card border-primary bg-dark">
         <div className="card-header" id="headingTwo">
-          <h2 className="mb-0">
-            <button
-              className="btn btn-link collapsed text-white"
-              type="button"
-              data-toggle="collapse"
-              data-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              <img src={launchLogo} />
-            </button>
-          </h2>
+          <div className="d-flex flex-row">
+            <div>
+              <h4 className="mb-0">
+                <button
+                  className="btn btn-link collapsed text-white pr-0"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <img src={launchLogo} />
+                </button>
+              </h4>
+            </div>
+            <div className="align-self-end">
+              <h4>
+                <button
+                  className="btn btn-link collapsed text-secondary pl-0"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <FontAwesomeIcon
+                    className="text-right"
+                    icon={["fas", "plus-circle"]}
+                  />
+                </button>
+              </h4>
+            </div>
+          </div>
         </div>
         <div
           id="collapseTwo"
@@ -109,18 +152,39 @@ const Work = () => {
       </div>
       <div className="card border-primary bg-dark">
         <div className="card-header" id="headingThree">
-          <h2 className="mb-0">
-            <button
-              className="btn btn-link collapsed"
-              type="button"
-              data-toggle="collapse"
-              data-target="#collapseThree"
-              aria-expanded="false"
-              aria-controls="collapseThree"
-            >
-              <BankofAmerica />
-            </button>
-          </h2>
+          <div className="d-flex flex-row">
+            <div>
+              <h2 className="mb-0">
+                <button
+                  className="btn btn-link collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <BankofAmerica />
+                </button>
+              </h2>
+            </div>
+            <div className="align-self-end">
+              <h4>
+                <button
+                  className="btn btn-link collapsed text-secondary pl-0"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <FontAwesomeIcon
+                    className="text-right"
+                    icon={["fas", "plus-circle"]}
+                  />
+                </button>
+              </h4>
+            </div>
+          </div>
         </div>
         <div
           id="collapseThree"

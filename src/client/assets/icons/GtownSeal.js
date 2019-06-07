@@ -1322,7 +1322,7 @@ const GtownSeal = () => {
             fill="#ffffff"
             transform="matrix(1.25 0 0 -1.25 46.3512 901.452)"
           >
-            <g id="g12336" fill="#ffffff" clip-path="url(#clipPath12338)">
+            <g id="g12336" fill="#ffffff" clipPath="url(#clipPath12338)">
               <g
                 id="g12342"
                 fill="#ffffff"
@@ -1358,7 +1358,7 @@ const GtownSeal = () => {
             fill="#ffffff"
             transform="matrix(1.25 0 0 -1.25 46.3512 901.452)"
           >
-            <g id="g12352" fill="#ffffff" clip-path="url(#clipPath12354)">
+            <g id="g12352" fill="#ffffff" clipPath="url(#clipPath12354)">
               <g
                 id="g12358"
                 fill="#ffffff"

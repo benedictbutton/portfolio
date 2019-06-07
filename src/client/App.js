@@ -7,9 +7,13 @@ import {
   faBriefcase,
   faGraduationCap,
   faHammer,
+  faPlusCircle,
   faTools
 } from "@fortawesome/free-solid-svg-icons";
-import { faFileAlt } from "@fortawesome/free-regular-svg-icons";
+import {
+  faArrowAltCircleRight,
+  faFileAlt
+} from "@fortawesome/free-regular-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./styling/App.scss";
 import IntroPage from "./components/IntroPage";
@@ -18,12 +22,14 @@ import Projects from "./components/Projects";
 import Resume from "./components/Resume";
 
 library.add(
+  faArrowAltCircleRight,
   faLinkedin,
   faGithub,
   faBriefcase,
   faFileAlt,
   faGraduationCap,
   faHammer,
+  faPlusCircle,
   faTools
 );
 

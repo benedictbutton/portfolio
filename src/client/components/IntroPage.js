@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import image from "../assets/arrows.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const IntroPage = () => {
   return (
@@ -12,12 +12,10 @@ const IntroPage = () => {
         </h3>
         <div>
           <Link to="/home">
-            <img
-              src={image}
-              alt="start"
-              height="70%"
-              width="70%"
+            <FontAwesomeIcon
               className="icon"
+              icon={["far", "arrow-alt-circle-right"]}
+              size="2x"
             />
           </Link>
         </div>

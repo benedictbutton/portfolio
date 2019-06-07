@@ -29,11 +29,13 @@ const Home = () => {
             <div className="container">
               <div className="row mt-2 justify-content-center">
                 <div className="col-4">
-                  <FontAwesomeIcon
-                    icon={["fab", "linkedin"]}
-                    size="2x"
-                    color="#0077b5"
-                  />
+                  <a href="https://www.linkedin.com/in/benedictdaly/">
+                    <FontAwesomeIcon
+                      icon={["fab", "linkedin"]}
+                      size="2x"
+                      color="#0077b5"
+                    />
+                  </a>
                 </div>
                 <div className="col-4">
                   <a href="https://github.com/benedictbutton">
