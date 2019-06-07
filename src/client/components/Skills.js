@@ -102,7 +102,7 @@ const Skills = () => {
           <div className="card-group w-100 mx-1">
             <div className="card border-primary bg-dark">
               <h4 className="card-header text-center">Testing</h4>
-              <div className="card-body pt-1 pb-0">
+              <div className="card-body py-1">
                 <div className="container">
                   <div className="row justify-content-around align-items-center">
                     <div className="col text-center">
