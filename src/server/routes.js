@@ -15,6 +15,7 @@ router.post("/send", async (req, res) => {
       auth: {
         xoauth2: xoauth2.createXOAuth2Generator({
           user: process.env.USER,
+          pass: process.env.PASS,
           clientId: process.env.CLIENT_ID,
           clientSecret: process.env.CLIENT_SECRET,
           refreshToken: "1/ZgOMbc2exLXtMEAX3mOFtcC61ThD3LVtPOnZ_Ix_NQc"
