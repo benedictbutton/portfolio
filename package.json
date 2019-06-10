@@ -54,7 +54,6 @@
     "react-router-dom": "^5.0.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
-    "webpack-dev-middleware": "^3.7.0",
-    "xoauth2": "^1.2.0"
+    "webpack-dev-middleware": "^3.7.0"
   }
 }
