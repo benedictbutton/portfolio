@@ -48,7 +48,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div className="toaster">
       <div className="container align-self-center w-75 border border-primary mb-5 p-3">
         <form id="myform" onSubmit={handleSubmit}>
           <div className="form-group">
