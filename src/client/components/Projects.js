@@ -101,7 +101,7 @@ const Projects = () => {
                   type="button"
                   className="btn btn-primary mb-2"
                   data-toggle="modal"
-                  data-target="#exampleModalCenter"
+                  data-target="#modalCenter"
                   onClick={() => setCount(1)}
                 >
                   View Toolbox
@@ -138,7 +138,7 @@ const Projects = () => {
                   type="button"
                   className="btn btn-primary mb-2"
                   data-toggle="modal"
-                  data-target="#exampleModalCenter"
+                  data-target="#modalCenter"
                   onClick={() => setCount(2)}
                 >
                   View Toolbox
@@ -181,7 +181,7 @@ const Projects = () => {
                   type="button"
                   className="btn btn-primary mb-2"
                   data-toggle="modal"
-                  data-target="#exampleModalCenter"
+                  data-target="#modalCenter"
                   onClick={() => setCount(3)}
                 >
                   View Toolbox

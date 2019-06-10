@@ -1,5 +1,6 @@
 "user strict";
 const path = require("path");
+const bodyParser = require("body-parser");
 
 const nconf = require("nconf");
 nconf
@@ -18,6 +19,15 @@ const express = require("express");
 const morgan = require("morgan");
 
 const app = express();
+app.use(morgan("dev"));
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
+// parse application/json
+app.use(bodyParser.json());
+
+require("dotenv").config();
+
+app.use("/api", require("./routes.js"));
 
 if (isDev) {
   const webpack = require("webpack");
@@ -33,8 +43,6 @@ if (isDev) {
   app.use(express.static("dist"));
 }
 
-app.use(morgan("dev"));
-
 // app.get("/*", function(req, res) {
 //   res.sendFile(path.join(__dirname, "dist/index.html"), function(err) {
 //     if (err) {
@@ -43,11 +51,37 @@ app.use(morgan("dev"));
 //   });
 // });
 
-app.get("/api/documentDownload", function(req, res) {
-  console.log("test");
-  res.download(path.join(__dirname, "OnlineResume.pdf"), function(err) {
-    console.log(err);
-  });
-});
+// app.get("/api/documentDownload", function(req, res) {
+//   console.log("test");
+//   res.download(path.join(__dirname, "OnlineResume.pdf"), function(err) {
+//     console.log(err);
+//   });
+// });
+
+// app.post("/api/send", function(req, res, next) {
+//   console.log("test");
+//   const transporter = nodemailer.createTransport({
+//     host: "smtp.office365.com",
+//     port: 587,
+//     auth: {
+//       user: process.env.USER,
+//       pass: process.env.PASS
+//     }
+//   });
+//   console.log(req);
+//   const mailOptions = {
+//     from: `${req.body.name}`,
+//     to: process.env.USER,
+//     text: `${req.body.message}`,
+//     replyTo: `${req.body.email}`
+//   };
+//   transporter.sendMail(mailOptions, function(err, res) {
+//     if (err) {
+//       console.error("there was an error: ", err);
+//     } else {
+//       console.log("here is the res: ", res);
+//     }
+//   });
+// });
 
 app.listen(port, () => console.log("Ready."));

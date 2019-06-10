@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Contact from "./Contact";
 import Education from "./Education";
 import Projects from "./Projects";
 import Skills from "./Skills";
@@ -88,6 +89,12 @@ const Home = () => {
                 <h5 className="text-white">Education</h5>
               </a>
             </li>
+            <li className="nav-item text-center mb-4">
+              <a className="nav-link p-0" href="#contact">
+                <FontAwesomeIcon icon={["far", "envelope"]} color="white" />
+                <h5 className="text-white">Contact</h5>
+              </a>
+            </li>
             <li className="nav-item text-center">
               <Link to="/resume">
                 <FontAwesomeIcon icon={["far", "file-alt"]} color="white" />
@@ -113,6 +120,10 @@ const Home = () => {
 
             <div id="education" className="col-12">
               <Education />
+            </div>
+
+            <div id="contact" className="col-12">
+              <Contact />
             </div>
           </div>
         </div>
