@@ -13,7 +13,7 @@ router.post("/send", async (req, res) => {
       secure: true,
       auth: {
         type: "OAuth2",
-        user: "benedictdaly@gmail.com",
+        user: process.env.USER,
         clientId: process.env.CLIENT_ID,
         clientSecret: process.env.CLIENT_SECRET,
         accessToken:
@@ -27,8 +27,8 @@ router.post("/send", async (req, res) => {
     // host: "smtp.office365.com",
 
     const mailOptions = {
-      from: `${req.body.name}`,
-      to: process.env.USER,
+      from: process.env.USER,
+      to: "benedictdaly@hotmail.com",
       text: `${req.body.message}`,
       replyTo: `${req.body.email}`
     };
