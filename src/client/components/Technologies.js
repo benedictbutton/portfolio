@@ -11,16 +11,16 @@ const Technologies = props => {
   return (
     <div
       className="modal fade"
-      id="exampleModalCenter"
+      id="modalCenter"
       tabIndex="-1"
       role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
+      aria-labelledby="modalCenterTitle"
       aria-hidden="true"
     >
       <div className="modal-dialog modal-dialog-centered" role="document">
         <div className="modal-content bg-dark">
           <div className="modal-header">
-            <h5 className="modal-title" id="exampleModalCenterTitle">
+            <h5 className="modal-title" id="modalCenterTitle">
               Technologies
             </h5>
             <button

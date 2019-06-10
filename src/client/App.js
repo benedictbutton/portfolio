@@ -12,6 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faArrowAltCircleRight,
+  faEnvelope,
   faFileAlt
 } from "@fortawesome/free-regular-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -23,6 +24,7 @@ import Resume from "./components/Resume";
 
 library.add(
   faArrowAltCircleRight,
+  faEnvelope,
   faLinkedin,
   faGithub,
   faBriefcase,
@@ -35,25 +37,23 @@ library.add(
 
 const App = () => {
   return (
-    <>
-      <Route
-        render={({ location }) => (
-          <ReactCSSTransitionReplace
-            transitionName="cross-fade"
-            transitionEnterTimeout={1000}
-            transitionLeaveTimeout={1000}
-          >
-            <div className="App" key={location.pathname}>
-              <Switch location={location}>
-                <Route exact path="/" component={IntroPage} />
-                <Route path="/home" component={Home} />
-                <Route path="/resume" component={Resume} />
-              </Switch>
-            </div>
-          </ReactCSSTransitionReplace>
-        )}
-      />
-    </>
+    <Route
+      render={({ location }) => (
+        <ReactCSSTransitionReplace
+          transitionName="cross-fade"
+          transitionEnterTimeout={1000}
+          transitionLeaveTimeout={1000}
+        >
+          <div className="App" key={location.pathname}>
+            <Switch location={location}>
+              <Route exact path="/" component={IntroPage} />
+              <Route path="/home" component={Home} />
+              <Route path="/resume" component={Resume} />
+            </Switch>
+          </div>
+        </ReactCSSTransitionReplace>
+      )}
+    />
   );
 };
 
