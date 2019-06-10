@@ -28,10 +28,6 @@ router.post("/send", async (req, res) => {
       }
     });
 
-    // user: process.env.USER,
-    // pass: process.env.PASS,
-    // host: "smtp.office365.com",
-
     const mailOptions = {
       from: process.env.USER,
       to: "benedictdaly@hotmail.com",
@@ -46,6 +42,7 @@ router.post("/send", async (req, res) => {
         console.log("here is the res: ", res);
       }
     });
+    res.status(200).json({ message: "Email successfully sent" });
   } catch (err) {
     res.status(err.statusCode || 502).json(err.error || err);
   }
