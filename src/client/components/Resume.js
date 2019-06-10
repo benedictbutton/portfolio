@@ -5,7 +5,7 @@ const Resume = () => {
     <div className="container">
       <h2>Resume</h2>
       <div className="embed-responsive embed-responsive-4by3">
-        <object data="./src/client/OnlineResume.pdf" type="application/pdf" />
+        <object data="./src/client/Resume.pdf" type="application/pdf" />
       </div>
     </div>
   );
