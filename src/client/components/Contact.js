@@ -4,7 +4,8 @@ const Contact = () => {
   const [values, setValues] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
+    error: false
   });
 
   const handleChange = event => {
@@ -28,14 +29,18 @@ const Contact = () => {
     }
   };
 
+  const handleAlert = () => {
+    setValues({
+      ...values,
+      error: false
+    });
+  };
+
   const showAlert = () => {
-    // setValues({
-    //   ...values,
-    //   colorCode: "bg-alert",
-    //   notification: "Sorry, looks like something went wrong."
-    // });
-    // $("#mytoast").toast("show");
-    console.log("Sorry, there was an error.");
+    setValues({
+      ...values,
+      error: true
+    });
   };
 
   const showMessage = () => {
@@ -62,7 +67,6 @@ const Contact = () => {
               onChange={handleChange}
             />
           </div>
-
           <div className="form-group">
             <label for="formControlInput2">Email address</label>
             <input
@@ -116,6 +120,28 @@ const Contact = () => {
         </div>
         <div className="toast-body text-white">Message successfully sent!</div>
       </div>
+      {values.error && (
+        <div
+          id="myalert"
+          className="alert alert-danger alert-dismissible fade show"
+          role="alert"
+        >
+          <p>
+            Well, this is embarassing. Seems there was an issue preventing the
+            sending of your message. Please try again, or alternatively, email
+            benedictdaly@outlook.com from your own email account.
+          </p>
+          <button
+            type="button"
+            className="close"
+            data-dismiss="alert"
+            aria-label="Close"
+            onClick={handleAlert}
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      )}
     </div>
   );
 };
