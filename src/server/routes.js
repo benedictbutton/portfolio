@@ -21,26 +21,20 @@ router.post("/send", async (req, res) => {
     });
 
     transporter.verify(function(error, success) {
-      if (error) {
-        console.log(error);
-      } else {
-        console.log("Server is ready to take our messages");
-      }
+      if (error) throw new Error(error);
+      else console.log("Server is ready to take our messages");
     });
 
     const mailOptions = {
       from: process.env.USER,
       to: "benedictdaly@hotmail.com",
       text: `${req.body.message}`,
-      replyTo: `${req.body.email}`
+      replyTo: `${req.body.name} <${req.body.email}>`
     };
 
     transporter.sendMail(mailOptions, function(err, res) {
-      if (err) {
-        console.error("there was an error: ", err);
-      } else {
-        console.log("here is the res: ", res);
-      }
+      if (err) throw new Error(err);
+      else console.log("here is the res: ", res);
     });
     res.status(200).json({ message: "Email successfully sent" });
   } catch (err) {

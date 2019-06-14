@@ -85,9 +85,9 @@ const Projects = () => {
               </div>
               <div className="col-12 col-md-4 mt-3">
                 <h5>Site:</h5>
-                <Link to={movieSite}>
+                <a href={movieSite} alt="link to project">
                   <p className="sm-font">{movieSite}</p>
-                </Link>
+                </a>
                 <h5>Description:</h5>
                 <p className="sm-font text-justify pr-3">
                   Relying on the MovieDB API for general movie info and images,
@@ -124,9 +124,9 @@ const Projects = () => {
               </div>
               <div className="col-12 col-md-4 mt-3">
                 <h5>Site:</h5>
-                <Link to={cricketSite}>
+                <a href={cricketSite} alt="link to project">
                   <p className="sm-font">{cricketSite}</p>
-                </Link>
+                </a>
                 <h5>Description:</h5>
                 <p className="sm-font text-justify pr-3">
                   A scoring app for the dart game Cricket that allows players to
@@ -164,9 +164,9 @@ const Projects = () => {
               </div>
               <div className="col-12 col-md-4 mt-3">
                 <h5>Site:</h5>
-                <Link to={tvSite}>
+                <a href={tvSite} alt="link to project">
                   <p className="sm-font">{tvSite}</p>
-                </Link>
+                </a>
                 <h5>Description:</h5>
                 <p className="sm-font text-justify pr-3">
                   As a member of a team of four at Launch Academy tasked with
