@@ -94,8 +94,8 @@ const Projects = () => {
                   I created my own movie site with an emphasis on rating movies
                   quickly and categorizing them through any number of freely
                   created watchlists, persisting user specific data to my own
-                  database. The third movie in the picture shows a movie when
-                  hovering the mouse over it.
+                  database. The third movie in the picture shows a movie being
+                  rated and added to the user's active playlist.
                 </p>
                 <button
                   type="button"
