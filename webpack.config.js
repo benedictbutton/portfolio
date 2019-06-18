@@ -2,7 +2,9 @@
 const path = require("path");
 const distDir = path.resolve(__dirname, "dist");
 const webpack = require("webpack");
+// Make sure this plugin is listed first
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
@@ -36,7 +38,13 @@ module.exports = {
         test: /\.(scss)$/,
         use: [
           {
-            loader: "style-loader" // inject CSS to page
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              // you can specify a publicPath here
+              // by default it uses publicPath in webpackOptions.output
+              publicPath: "/",
+              hmr: process.env.NODE_ENV === "development"
+            }
           },
           {
             loader: "css-loader" // translates CSS into CommonJS modules
@@ -69,6 +77,10 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery"
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css"
     }),
     new webpack.HotModuleReplacementPlugin()
   ]
