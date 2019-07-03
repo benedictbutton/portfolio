@@ -3,6 +3,7 @@ import ActiveRecord from "../assets/icons/ActiveRecord";
 import Bootstrap from "../assets/icons/Bootstrap";
 import Css from "../assets/icons/Css";
 import Enzyme from "../assets/icons/Enzyme";
+import Express from "../assets/icons/Express";
 import Foundation from "../assets/icons/Foundation";
 import Git from "../assets/icons/Git";
 import Html from "../assets/icons/Html";
@@ -64,12 +65,18 @@ const Skills = () => {
                     <div className="col text-center">
                       <ReAct />
                     </div>
-                    <div className="w-100" />
                     <div className="col text-center">
                       <Node />
                     </div>
+                    <div className="w-100 mb-2" />
                     <div className="col text-center">
                       <Redux />
+                    </div>
+                    <div className="col text-center">
+                      <Express />
+                    </div>
+                    <div className="col text-center">
+                      <Jquery />
                     </div>
                   </div>
                 </div>
