@@ -27,6 +27,7 @@ module.exports = {
       "/api": "http://localhost:8080"
     }
   },
+  devtool: "cheap-module-eval-source-map",
   module: {
     rules: [
       {
