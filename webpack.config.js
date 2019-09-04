@@ -13,7 +13,7 @@ module.exports = {
   },
   output: {
     path: distDir,
-    publicPath: "dtlbjvxtsh2ns.cloudfront.net",
+    publicPath: "/",
     filename: "[name].js"
   },
   resolve: {
