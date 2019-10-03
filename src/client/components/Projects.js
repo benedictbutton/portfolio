@@ -76,20 +76,20 @@ const Projects = () => {
         <div className="carousel-inner border border-primary bg-dark">
           <div className="carousel-item active">
             <div className="row">
-              <div className="col-12 col-md-8">
+              <div className="col-12 col-lg-8">
                 <img
                   src={moviesScene}
                   className="d-block w-100 img-fluid prj-images"
                   alt="project Movies-Scene"
                 />
               </div>
-              <div className="col-12 col-md-4 mt-3">
+              <div className="col-12 col-lg-3 mt-2 ml-1">
                 <h5>Site:</h5>
                 <a href={movieSite} alt="link to project">
                   <p className="sm-font">{movieSite}</p>
                 </a>
                 <h5>Description:</h5>
-                <p className="sm-font text-justify pr-3">
+                <p className="sm-font text-justify text-wrap">
                   Relying on the MovieDB API for general movie info and images,
                   I created my own movie site with an emphasis on rating movies
                   quickly and categorizing them through any number of freely
@@ -115,14 +115,14 @@ const Projects = () => {
 
           <div className="carousel-item">
             <div className="row">
-              <div className="col-12 col-md-8">
+              <div className="col-12 col-lg-8">
                 <img
                   src={cricket}
                   className="d-block w-100 img-fluid prj-images"
                   alt="project Cricket"
                 />
               </div>
-              <div className="col-12 col-md-4 mt-3">
+              <div className="col-12 col-lg-3 mt-2 ml-1">
                 <h5>Site:</h5>
                 <a href={cricketSite} alt="link to project">
                   <p className="sm-font">{cricketSite}</p>
@@ -155,14 +155,14 @@ const Projects = () => {
 
           <div className="carousel-item">
             <div className="row">
-              <div className="col-12 col-md-8">
+              <div className="col-12 col-lg-8">
                 <img
                   src={tvReviews}
                   className="d-block w-100 img-fluid prj-images"
                   alt="project Tv-Reviews"
                 />
               </div>
-              <div className="col-12 col-md-4 mt-3">
+              <div className="col-12 col-lg-3 mt-2 ml-1">
                 <h5>Site:</h5>
                 <a href={tvSite} alt="link to project">
                   <p className="sm-font">{tvSite}</p>

@@ -11,8 +11,10 @@ import Jasmine from "../assets/icons/Jasmine";
 import Javascript from "../assets/icons/Javascript";
 import Jquery from "../assets/icons/Jquery";
 import Material from "../assets/icons/Material";
-import Postgres from "../assets/icons/Postgres";
+import MongoDb from "../assets/icons/MongoDb";
 import Node from "../assets/icons/Node";
+import Oauth from "../assets/icons/Oauth";
+import Postgres from "../assets/icons/Postgres";
 import Rails from "../assets/icons/Rails";
 import ReAct from "../assets/icons/ReAct";
 import ReactRouter from "../assets/icons/ReactRouter";
@@ -31,8 +33,8 @@ const Skills = () => {
           <div className="card-group w-100 mx-1">
             <div className="card border-primary bg-dark">
               <h4 className="card-header text-center">Languages</h4>
-              <div className="card-body p-0">
-                <div className="container">
+              <div className="card-body container p-0">
+                <div className="container skills">
                   <div className="row justify-content-around align-items-center">
                     <div className="col text-center">
                       <Javascript />
@@ -138,6 +140,9 @@ const Skills = () => {
                     <div className="col text-center">
                       <Postgres />
                     </div>
+                    <div className="col align-center text-center">
+                      <MongoDb />
+                    </div>
                     <div className="col text-center">
                       <Webpack />
                     </div>
@@ -167,6 +172,9 @@ const Skills = () => {
                     <div className="w-100" />
                     <div className="col text-center">
                       <ActiveRecord />
+                    </div>
+                    <div className="col text-center">
+                      <Oauth />
                     </div>
                   </div>
                 </div>
