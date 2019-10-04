@@ -74,16 +74,16 @@ const Projects = () => {
     >
       <div className="row">
         <div className="carousel-inner border border-primary bg-dark">
-          <div className="carousel-item active">
+          <div className="carousel-item active container-fluid">
             <div className="row">
-              <div className="col-12 col-lg-8">
+              <div className="col-12 col-lg-8 pl-0">
                 <img
                   src={moviesScene}
                   className="d-block w-100 img-fluid prj-images"
                   alt="project Movies-Scene"
                 />
               </div>
-              <div className="col-12 col-lg-3 mt-2 ml-1">
+              <div className="col-12 col-lg-4 mt-2 pl-1 pr-3">
                 <h5>Site:</h5>
                 <a href={movieSite} alt="link to project">
                   <p className="sm-font">{movieSite}</p>
@@ -113,22 +113,22 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="carousel-item">
+          <div className="carousel-item container-fluid">
             <div className="row">
-              <div className="col-12 col-lg-8">
+              <div className="col-12 col-lg-8 pl-0">
                 <img
                   src={cricket}
                   className="d-block w-100 img-fluid prj-images"
                   alt="project Cricket"
                 />
               </div>
-              <div className="col-12 col-lg-3 mt-2 ml-1">
+              <div className="col-12 col-lg-4 mt-2 pl-1 pr-3">
                 <h5>Site:</h5>
                 <a href={cricketSite} alt="link to project">
                   <p className="sm-font">{cricketSite}</p>
                 </a>
                 <h5>Description:</h5>
-                <p className="sm-font text-justify pr-3">
+                <p className="sm-font text-justify text-wrap">
                   A scoring app for the dart game Cricket that allows players to
                   record their play. In the spirit of competitiveness, players
                   can track matches across time, who played whom, and even pause
@@ -153,22 +153,22 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="carousel-item">
+          <div className="carousel-item container-fluid">
             <div className="row">
-              <div className="col-12 col-lg-8">
+              <div className="col-12 col-lg-8 pl-0">
                 <img
                   src={tvReviews}
                   className="d-block w-100 img-fluid prj-images"
                   alt="project Tv-Reviews"
                 />
               </div>
-              <div className="col-12 col-lg-3 mt-2 ml-1">
+              <div className="col-12 col-lg-4 mt-2 pl-1 pr-3">
                 <h5>Site:</h5>
                 <a href={tvSite} alt="link to project">
                   <p className="sm-font">{tvSite}</p>
                 </a>
                 <h5>Description:</h5>
-                <p className="sm-font text-justify pr-3">
+                <p className="sm-font text-justify text-wrap">
                   As a member of a team of four at Launch Academy tasked with
                   building an app in a production environment, I contrbuted to
                   the design, development and final deployment of TV a la Carte.
