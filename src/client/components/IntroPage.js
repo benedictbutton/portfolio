@@ -15,7 +15,7 @@ const IntroPage = () => {
         </div>
         <h1 className="title text-center">Benedict Daly</h1>
         <h3 className="subtitle text-center">
-          Jr Full Stack Software Developer
+        Software Engineer
         </h3>
         <div>
           <Link to="/home">

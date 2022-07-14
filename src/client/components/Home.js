@@ -9,7 +9,7 @@ import Resume from "./Resume";
 import Work from "./Work";
 
 const Home = () => {
-  const subTitle = "{ Jr Full Stack Software Developer }";
+  const subTitle = "{ Software Engineer }";
   return (
     <>
       <div className="container-fluid">
