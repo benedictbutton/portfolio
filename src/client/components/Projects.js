@@ -153,12 +153,12 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="carousel-item container-fluid">
+          <div className="carousel-item container-fluid" style={{maxHeight: '515.3px'}}>
             <div className="row">
               <div className="col-12 col-lg-8 pl-0">
                 <img
                   src={tvReviews}
-                  className="d-block w-100 img-fluid prj-images"
+                  className="d-block w-100 h-auto img-fluid prj-images"
                   alt="project Tv-Reviews"
                 />
               </div>
