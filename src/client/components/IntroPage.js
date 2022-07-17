@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import image from "../assets/profile-pic.jpeg";
+import image from "../assets/profile-pic.jpg";
 
 const IntroPage = () => {
   return (
@@ -10,7 +10,7 @@ const IntroPage = () => {
         <div className="img-responsive">
           <img
             src={image}
-            className="img-circle border border-primary border-3"
+            className="img-circle border border-primary border-3 h-100"
           />
         </div>
         <h1 className="title text-center">Benedict Daly</h1>
