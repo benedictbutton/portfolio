@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import image from "../assets/profile-pic.jpg";
+import image from "../assets/profile-pic-1.jpg";
 
 const IntroPage = () => {
   return (
