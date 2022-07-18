@@ -52,19 +52,19 @@ const Work = () => {
                     data-parent="#accordionOne"
                 >
                     <div className="card-body">
-                        <h5 className="card-title">Contract Worker</h5>
+                        <h5 className="card-title">Software Engineer</h5>
                         <h6 className="card-subtitle mb-2 text-muted">
                             Feb 2020 - Present
                         </h6>
                         <h6 className="card-subtitle mb-2 text-muted">
-                            Waltham MA
+                            Boston MA
                         </h6>
                         <ul className="md list-group list-group-flush">
                             <li className="list-group-item bg-dark shadow-lg">
                                 Worked across multiple projects with a variety
-                                of technical stacks; necessitated quickly
-                                ramping up on working with different software
-                                tools and collaborating across different teams
+                                of technical stacks, necessitating quick ramp up
+                                on working with different software tools and
+                                collaborating across different teams
                             </li>
                             <li className="list-group-item bg-dark shadow-lg">
                                 Refactored a client’s application by
@@ -80,8 +80,10 @@ const Work = () => {
                             </li>
                             <li className="list-group-item bg-dark shadow-lg">
                                 One of two engineers tasked with implementation
-                                of a GraphQl headless CMS using GraphCMS; relied
-                                on Nextjs for static generation and SSR of pages
+                                of a GraphQl headless CMS modeled using
+                                GraphCMS; relied on React for an interactive UI
+                                and on Nextjs for static generation and SSR of
+                                pages
                             </li>
                             <li className="list-group-item bg-dark shadow-lg">
                                 Performed an accessibility audit of a client’s
