@@ -5,28 +5,30 @@ const WorkItem = ({ logo, name, position, location, dates, experience }) => {
     const [show, setShow] = useState(name === 'Cantina' ? true : false)
     return (
         <div key={name} className="card border-primary bg-dark">
-            <div className="card-header m-0 p-0" id="headingFour">
-                <div className="d-flex flex-row">
-                    <div>
-                        <h4 className="mb-0">
-                            <button
-                                className="btn btn-link text-white pr-0"
-                                type="button"
-                                aria-label={name}
-                                aria-expanded={show}
-                                aria-controls="collapseFour"
-                                onClick={() => setShow((prev) => !prev)}
-                            >
-                                {logo}
-                                <FontAwesomeIcon
-                                    className="text-righ align-bottom text-secondary ml-2 mb-2"
-                                    icon={['fas', 'plus-circle']}
-                                />
-                            </button>
-                        </h4>
+            <button
+                className="btn btn-link text-white pr-0"
+                type="button"
+                aria-label={name}
+                aria-expanded={show}
+                aria-controls="collapseFour"
+                onClick={() => setShow((prev) => !prev)}
+            >
+                <div className="card-header m-0 p-0" id="headingFour">
+                    <div
+                        className="d-flex flex-row justify-content-between"
+                        style={{ minHeight: '150px' }}
+                    >
+                        <div className="align-middle my-auto">
+                            <h4 className="mb-0"></h4>
+                            {logo}
+                        </div>
+                        <div className="align-middle text-secondary mx-4 my-auto">
+                            <FontAwesomeIcon icon={['fas', 'plus-circle']} />
+                        </div>
                     </div>
                 </div>
-            </div>
+            </button>
+
             <div
                 id="collapseFour"
                 className={`collapse ${show ? 'show' : ''}`}
