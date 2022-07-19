@@ -5,10 +5,9 @@ import WorkItem from './WorkItem'
 const Work = () => {
     return (
         <div className="accordion mt-5" id="accordionOne">
-            {workData.map((company) => {
-                console.log(company)
-                return <WorkItem key={company.name} {...company} />
-            })}
+            {workData.map((company) => (
+                <WorkItem key={company.name} {...company} />
+            ))}
         </div>
     )
 }
