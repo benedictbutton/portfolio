@@ -41,7 +41,7 @@ const Home = () => {
                                         />
                                     </a>
                                 </div>
-                                <div className="col-4">
+                                <div className="col-4 text-center">
                                     <a href="https://github.com/benedictbutton">
                                         <FontAwesomeIcon
                                             icon={['fab', 'github']}
@@ -50,8 +50,8 @@ const Home = () => {
                                     </a>
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="col-12 pt-2">
+                            <div className="row justify-content-center">
+                                <div className="col-8 pt-2">
                                     <p className="small text-center">
                                         benedictdaly@outlook.com
                                     </p>
