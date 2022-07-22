@@ -32,7 +32,7 @@ const Home = () => {
                     <div className="col-sm-3 sub-header">
                         <div className="container">
                             <div className="row mt-2 justify-content-center">
-                                <div className="col-4">
+                                <div className="col-4 text-center">
                                     <a href="https://www.linkedin.com/in/benedictdaly/">
                                         <FontAwesomeIcon
                                             icon={['fab', 'linkedin']}
