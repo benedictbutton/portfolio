@@ -15,7 +15,7 @@ export const workData = [
             'Worked across multiple projects with a variety of technical stacks; necessitated quickly ramping up on working with different software tools and collaborating across different teams',
             'Refactored a client’s application by restructuring React components for improved data flow; additionally leveraged React-Table for complex sorting, filtering, and searching of user data',
             'For a major client’s website redesign, built the majority of React components, utilizing CSS modules for targeted styling',
-            'One of two engineers tasked with implementation of a GraphQl headless CMS modeled using GraphCMS; relied on React for an interactive UI and on Nextjs for static generation and SSR of pages',
+            'One of two engineers tasked with implementation of a GraphQL, headless CMS modeled using GraphCMS; relied on React for an interactive UI and on Nextjs for SSR and static generation of pages',
             'Performed an accessibility audit of a client’s website for WGAC 2.1 compliance; drafted a report with best practices, informational resources, and recommendations for targeted fixes',
         ],
     },

@@ -40,6 +40,18 @@ const WorkItem = ({ logo, name, position, location, dates, experience }) => {
                     <h6 className="card-subtitle mb-2 text-muted">
                         {location}
                     </h6>
+                    {name === 'Cantina' && (
+                        <h6>
+                            <a
+                                href="https://cantina.co/"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="card-subtitle mb-2"
+                            >
+                                https://cantina.co/
+                            </a>
+                        </h6>
+                    )}
                     <ul className="md list-group list-group-flush">
                         {experience.map((experienceItem, idx) => (
                             <li
