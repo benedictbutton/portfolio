@@ -1,14 +1,14 @@
-.home {
-    background-image: url('../assets/simple-background.png');
-    flex: 1;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -moz-background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    position: relative;
-}
+// .home {
+//     background-image: url('../assets/simple-background.png');
+//     flex: 1;
+//     width: 100%;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     -moz-background-size: 100% 100%;
+//     -webkit-background-size: 100% 100%;
+//     position: relative;
+// }
 
 .home:before {
     content: '';
@@ -19,6 +19,14 @@
     height: 100%;
     width: 100%;
     position: absolute;
+    background-image: url('../assets/winter_mountains.jpg'),
+        url('../assets/beach.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+    background-attachment: fixed;
+    -moz-background-size: 100% 50%, 100% 50%;
+    -webkit-background-size: 100% 50%, 100% 50%;
+    background-size: 100% 50%, 100% 50%;
 }
 
 .App {
@@ -42,7 +50,7 @@
 
 .pointer {
     animation: animate 3.5s ease-out infinite;
-    color: blue;
+    color: white;
 }
 
 .blink {
@@ -63,7 +71,7 @@
     font-size: 5rem;
     word-spacing: 1rem;
     margin-bottom: 0;
-    color: #a16e83;
+    color: white;
     position: relative;
 }
 
@@ -81,7 +89,7 @@
 }
 
 .subtitle {
-    color: #a16e83;
+    color: white;
     position: relative;
 }
 
@@ -238,12 +246,12 @@
 
 @keyframes animate {
     0% {
-        color: yellow;
+        color: white;
     }
     50% {
-        color: #007bff;
+        color: tan;
     }
     100% {
-        color: yellow;
+        color: white;
     }
 }
