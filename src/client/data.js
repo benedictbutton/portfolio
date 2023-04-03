@@ -9,7 +9,7 @@ export const workData = [
         logo: <Cantina />,
         name: 'Cantina',
         position: 'Software Engineer',
-        dates: 'Feb 2020 - Present',
+        dates: 'Feb 2020 - Sept 2022',
         location: 'Boston MA',
         experience: [
             'One of three engineers tasked with implementation of a GraphQL headless CMS; relied on React for an interactive UI and on Nextjs for static generation of pages',
