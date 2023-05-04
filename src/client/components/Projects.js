@@ -1,25 +1,6 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import ActiveRecord from "../assets/icons/ActiveRecord";
-import Enzyme from "../assets/icons/Enzyme";
-import Foundation from "../assets/icons/Foundation";
-import Jasmine from "../assets/icons/Jasmine";
-import Material from "../assets/icons/Material";
-import Oauth from "../assets/icons/Oauth";
-import Postgres from "../assets/icons/Postgres";
-import Rails from "../assets/icons/Rails";
-import ReAct from "../assets/icons/ReAct";
-import ReactRouter from "../assets/icons/ReactRouter";
-import Redux from "../assets/icons/Redux";
-import ReduxForms from "../assets/icons/ReduxForms";
-import ReduxSaga from "../assets/icons/ReduxSaga";
-import Rspec from "../assets/icons/Rspec";
-import Technologies from "./Technologies";
-import Webpack from "../assets/icons/Webpack";
-import Yarn from "../assets/icons/Yarn";
-import moviesScene from "../assets/Movies-Scene.png";
-import cricket from "../assets/Cricket.png";
-import tvReviews from "../assets/Tv-Reviews.png";
+import React, { useState } from 'react';
+import Technologies from './Technologies';
+import { projectData } from '../Data/projectData';
 
 const Projects = () => {
   const [count, setCount] = useState(0);
@@ -27,43 +8,6 @@ const Projects = () => {
   const handleCount = () => {
     setCount(0);
   };
-
-  const movieSite = `http://movies-scene.herokuapp.com`;
-  const cricketSite = `http://crickety.herokuapp.com/`;
-  const tvSite = `http://tv-reviews.herokuapp.com/`;
-
-  const movieTools = [
-    <Rails />,
-    <ReAct />,
-    <Redux />,
-    <Material />,
-    <ReactRouter />,
-    <Postgres />,
-    <ActiveRecord />,
-    <ReduxSaga />,
-    <ReduxForms />
-  ];
-  const cricketTools = [
-    <Rails />,
-    <ReAct />,
-    <Foundation />,
-    <ReactRouter />,
-    <ActiveRecord />,
-    <Rspec />,
-    <Enzyme />,
-    <Oauth />
-  ];
-
-  const tvTools = [
-    <Rails />,
-    <ReAct />,
-    <Foundation />,
-    <ReactRouter />,
-    <ActiveRecord />,
-    <Rspec />,
-    <Enzyme />,
-    <Jasmine />
-  ];
 
   return (
     <div
@@ -74,127 +18,90 @@ const Projects = () => {
     >
       <div className="row">
         <div className="carousel-inner border border-primary bg-dark">
-          <div className="carousel-item active container-fluid">
-            <div className="row">
-              <div className="col-12 col-lg-8 pl-0">
-                <img
-                  src={moviesScene}
-                  className="d-block w-100 img-fluid prj-images"
-                  alt="project Movies-Scene"
-                />
+          {projectData.map((project, idx) => {
+            const { id, image, site, description, tools, video } =
+              project;
+            return (
+              <div
+                className={`${
+                  idx === 0 ? 'active' : ''
+                } carousel-item container-fluid`}
+                key={idx}
+              >
+                <div className="row">
+                  {image && (
+                    <div className="col-12 col-lg-8 pl-0">
+                      <img
+                        src={image}
+                        className="d-block w-100 img-fluid prj-images"
+                        alt=""
+                      />
+                    </div>
+                  )}
+                  {video && (
+                    <div
+                      className="col-12 col-lg-8 text-center"
+                      style={{ backgroundColor: 'black' }}
+                    >
+                      <video
+                        controls
+                        autoPlay
+                        muted
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                        }}
+                      >
+                        <source src="https://www.dropbox.com/s/4wql9iugrwdtd3a/recording1.mov?raw=1"></source>
+                      </video>
+                    </div>
+                  )}
+                  <div
+                    className={`col-12 col-lg-4 mt-2 ${
+                      video ? 'pl-3' : 'pl-1'
+                    } pr-3`}
+                  >
+                    <h5>Site:</h5>
+                    <p className="sm-font">
+                      <a
+                        href={site}
+                        alt="link to project"
+                        className="text-white"
+                        style={{
+                          textDecoration:
+                            id !== 3 && 'solid underline #007bff 3px',
+                          textUnderlineOffset: '5px',
+                        }}
+                      >
+                        {site}
+                      </a>
+                    </p>
+                    <h5>Description:</h5>
+                    <p className="sm-font text-justify text-wrap">
+                      {description}
+                    </p>
+                    <button
+                      type="button"
+                      className="btn btn-primary mb-2"
+                      data-toggle="modal"
+                      data-target="#modalCenter"
+                      onClick={() => setCount(idx + 1)}
+                    >
+                      View Toolbox
+                    </button>
+                    {count === idx + 1 && (
+                      <Technologies
+                        tools={tools}
+                        handleCount={handleCount}
+                      />
+                    )}
+                  </div>
+                </div>
               </div>
-              <div className="col-12 col-lg-4 mt-2 pl-1 pr-3">
-                <h5>Site:</h5>
-                <a href={movieSite} alt="link to project">
-                  <p className="sm-font">{movieSite}</p>
-                </a>
-                <h5>Description:</h5>
-                <p className="sm-font text-justify text-wrap">
-                  Relying on the MovieDB API for general movie info and images,
-                  I created my own movie site with an emphasis on rating movies
-                  quickly and categorizing them through any number of freely
-                  created watchlists, persisting user specific data to my own
-                  database. The third movie in the picture shows a movie being
-                  rated and added to the user's active playlist.
-                </p>
-                <button
-                  type="button"
-                  className="btn btn-primary mb-2"
-                  data-toggle="modal"
-                  data-target="#modalCenter"
-                  onClick={() => setCount(1)}
-                >
-                  View Toolbox
-                </button>
-                {count === 1 && (
-                  <Technologies tools={movieTools} handleCount={handleCount} />
-                )}
-              </div>
-            </div>
-          </div>
-
-          <div className="carousel-item container-fluid">
-            <div className="row">
-              <div className="col-12 col-lg-8 pl-0">
-                <img
-                  src={cricket}
-                  className="d-block w-100 img-fluid prj-images"
-                  alt="project Cricket"
-                />
-              </div>
-              <div className="col-12 col-lg-4 mt-2 pl-1 pr-3">
-                <h5>Site:</h5>
-                <a href={cricketSite} alt="link to project">
-                  <p className="sm-font">{cricketSite}</p>
-                </a>
-                <h5>Description:</h5>
-                <p className="sm-font text-justify text-wrap">
-                  A scoring app for the dart game Cricket that allows players to
-                  record their play. In the spirit of competitiveness, players
-                  can track matches across time, who played whom, and even pause
-                  play to resume matches at a later date.
-                </p>
-                <button
-                  type="button"
-                  className="btn btn-primary mb-2"
-                  data-toggle="modal"
-                  data-target="#modalCenter"
-                  onClick={() => setCount(2)}
-                >
-                  View Toolbox
-                </button>
-                {count === 2 && (
-                  <Technologies
-                    tools={cricketTools}
-                    handleCount={handleCount}
-                  />
-                )}
-              </div>
-            </div>
-          </div>
-
-          <div className="carousel-item container-fluid" style={{maxHeight: '515.3px'}}>
-            <div className="row">
-              <div className="col-12 col-lg-8 pl-0">
-                <img
-                  src={tvReviews}
-                  className="d-block w-100 h-auto img-fluid prj-images"
-                  alt="project Tv-Reviews"
-                />
-              </div>
-              <div className="col-12 col-lg-4 mt-2 pl-1 pr-3">
-                <h5>Site:</h5>
-                <a href={tvSite} alt="link to project">
-                  <p className="sm-font">{tvSite}</p>
-                </a>
-                <h5>Description:</h5>
-                <p className="sm-font text-justify text-wrap">
-                  As a member of a team of four at Launch Academy tasked with
-                  building an app in a production environment, I contrbuted to
-                  the design, development and final deployment of TV a la Carte.
-                  Guided by Agile methodology, and ensuring best practices such
-                  as adhereance to TDD, almost all of the code was
-                  collobratively written through peer programing. The site
-                  caters to sharing TV reviews in an open forum.
-                </p>
-                <button
-                  type="button"
-                  className="btn btn-primary mb-2"
-                  data-toggle="modal"
-                  data-target="#modalCenter"
-                  onClick={() => setCount(3)}
-                >
-                  View Toolbox
-                </button>
-                {count === 3 && (
-                  <Technologies tools={tvTools} handleCount={handleCount} />
-                )}
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
-
       <div className="row">
         <div className="col-12">
           <div className="carousel-outer mt-5">
@@ -215,6 +122,11 @@ const Projects = () => {
                 data-slide-to="2"
                 onClick={() => setCount(0)}
               />
+              <li
+                data-target="#carouselIndicators"
+                data-slide-to="3"
+                onClick={() => setCount(0)}
+              />
             </ol>
             <a
               className="carousel-control-prev"
@@ -223,7 +135,10 @@ const Projects = () => {
               data-slide="prev"
               onClick={() => setCount(0)}
             >
-              <span className="carousel-control-prev-icon" aria-hidden="true" />
+              <span
+                className="carousel-control-prev-icon"
+                aria-hidden="true"
+              />
               <span className="sr-only">Previous</span>
             </a>
             <a

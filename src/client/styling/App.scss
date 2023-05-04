@@ -244,6 +244,11 @@
     max-width: 100%;
 }
 
+video::-webkit-media-controls-panel {
+    display: flex !important;
+    opacity: 1 !important;
+}
+
 @keyframes animate {
     0% {
         color: white;
