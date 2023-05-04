@@ -69,7 +69,7 @@ const Projects = () => {
                         className="text-white"
                         style={{
                           textDecoration:
-                            id !== 3 && 'solid underline #007bff 3px',
+                            id !== 4 && 'solid underline #007bff 3px',
                           textUnderlineOffset: '5px',
                         }}
                       >
@@ -85,11 +85,11 @@ const Projects = () => {
                       className="btn btn-primary mb-2"
                       data-toggle="modal"
                       data-target="#modalCenter"
-                      onClick={() => setCount(idx + 1)}
+                      onClick={() => setCount(id)}
                     >
                       View Toolbox
                     </button>
-                    {count === idx + 1 && (
+                    {count === id && (
                       <Technologies
                         tools={tools}
                         handleCount={handleCount}

@@ -11,252 +11,256 @@
 // }
 
 .home:before {
-    content: '';
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-image: url('../assets/winter_mountains.jpg'),
-        url('../assets/beach.png');
-    background-repeat: no-repeat, no-repeat;
-    background-position: top, bottom;
-    background-attachment: fixed;
-    -moz-background-size: 100% 50%, 100% 50%;
-    -webkit-background-size: 100% 50%, 100% 50%;
-    background-size: 100% 50%, 100% 50%;
+  content: '';
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url('../assets/winter_mountains.jpg'),
+    url('../assets/beach.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: top, bottom;
+  background-attachment: fixed;
+  -moz-background-size: 100% 50%, 100% 50%;
+  -webkit-background-size: 100% 50%, 100% 50%;
+  background-size: 100% 50%, 100% 50%;
 }
 
 .App {
-    background-color: #19181a;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: calc(10px + 2vmin);
-    color: white;
+  background-color: #19181a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 .my-brder {
-    border-left: 3px solid blue;
+  border-left: 3px solid blue;
 }
 
 .intro img {
-    width: 300px;
+  width: 300px;
 }
 
 .pointer {
-    animation: animate 3.5s ease-out infinite;
-    color: white;
+  animation: animate 3.5s ease-out infinite;
+  color: white;
 }
 
 .blink {
-    animation: animate 3.5s ease-out infinite;
+  animation: animate 3.5s ease-out infinite;
 }
 
 .landing-text {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .titles {
-    margin-top: 10%;
+  margin-top: 10%;
 }
 
 .title {
-    font-size: 5rem;
-    word-spacing: 1rem;
-    margin-bottom: 0;
-    color: white;
-    position: relative;
+  font-size: 5rem;
+  word-spacing: 1rem;
+  margin-bottom: 0;
+  color: white;
+  position: relative;
 }
 
 .skills {
-    height: 100%;
+  height: 100%;
 }
 
 .tracker {
-    position: relative;
-    overflow-y: scroll;
+  position: relative;
+  overflow-y: scroll;
 }
 
 .toaster {
-    min-height: 200px;
+  min-height: 200px;
 }
 
 .subtitle {
-    color: white;
-    position: relative;
+  color: white;
+  position: relative;
 }
 
 .header {
-    background-color: #003366;
+  background-color: #003366;
 }
 
 .sub-header {
-    font-size: 1.25rem;
-    background-color: #ffffff;
-    color: #000000;
+  font-size: 1.25rem;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .icon {
-    position: relative;
+  position: relative;
 }
 
 .font-icon {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .nav-bar {
-    background-color: red;
+  background-color: red;
 }
 
 .sm-font {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .md-font {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .prj-images {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .prj-lg-images {
-    width: 300%;
-    height: auto;
+  width: 300%;
+  height: auto;
 }
 
 // skills icons
 .dev-sm-icon {
-    display: inline-block;
-    width: 4rem;
+  display: inline-block;
+  width: 4rem;
 }
 
 .dev-lg-icon {
-    width: 15rem;
+  width: 15rem;
 }
 
 .dev-icon {
-    display: inline-block;
-    width: 4.5rem;
-    margin: 7%;
+  display: inline-block;
+  width: 4.5rem;
+  margin: 7%;
 }
 
 .dev2-icon {
-    display: inline-block;
-    width: 5rem;
+  display: inline-block;
+  width: 5rem;
 }
 
 .dev3-icon {
-    display: inline-block;
-    width: 5.5rem;
+  display: inline-block;
+  width: 5.5rem;
 }
 
 .dev7-icon {
-    display: inline-block;
-    width: 7rem;
+  display: inline-block;
+  width: 7rem;
 }
 
 .dev9-icon {
-    display: inline-block;
-    width: 9rem;
+  display: inline-block;
+  width: 9rem;
 }
 
 .dev11-icon {
-    display: inline-block;
-    width: 11rem;
+  display: inline-block;
+  width: 11rem;
 }
 
 .node-icon {
-    width: 5.75rem;
+  width: 5.75rem;
 }
 
 .sm {
-    font-size: 0.75rem;
+  font-size: 0.75rem;
 }
 
 .md {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .st0 {
-    fill: #0070b8;
+  fill: #0070b8;
 }
 
 .st1 {
-    fill: #808184;
+  fill: #808184;
 }
 
 // cross-fade
 .cross-fade-leave {
-    opacity: 1;
+  opacity: 1;
 }
 .cross-fade-leave.cross-fade-leave-active {
-    opacity: 0;
-    transition: opacity 1s ease-in;
+  opacity: 0;
+  transition: opacity 1s ease-in;
 }
 .cross-fade-enter {
-    opacity: 0;
+  opacity: 0;
 }
 .cross-fade-enter.cross-fade-enter-active {
-    opacity: 1;
-    transition: opacity 1s ease-in;
+  opacity: 1;
+  transition: opacity 1s ease-in;
 }
 .cross-fade-height {
-    transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
 }
 
 // profile picture
 .img-circle {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .img-circle {
-    border-radius: 0;
-    border-width: thick;
+  border-radius: 0;
+  border-width: thick;
 }
 
 .ratio {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    height: 0;
-    padding-bottom: 100%;
-    position: relative;
-    width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .img-circle {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .img-responsive {
-    display: block;
-    height: auto;
-    max-width: 100%;
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 video::-webkit-media-controls-panel {
-    display: flex !important;
-    opacity: 1 !important;
+  display: flex !important;
+  opacity: 1 !important;
+}
+
+.accordion-button > path {
+  fill: #007bff;
 }
 
 @keyframes animate {
-    0% {
-        color: white;
-    }
-    50% {
-        color: tan;
-    }
-    100% {
-        color: white;
-    }
+  0% {
+    color: white;
+  }
+  50% {
+    color: tan;
+  }
+  100% {
+    color: white;
+  }
 }

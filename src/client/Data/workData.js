@@ -24,7 +24,7 @@ export const workData = [
   {
     logo: <Symetra />,
     name: 'Symetra',
-    position: 'Contract Worker',
+    position: 'Document Review',
     dates: 'Nov 2017 - Aug 2018',
     location: 'Boston MA',
     experience: [

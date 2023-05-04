@@ -49,51 +49,6 @@ export const projectData = [
   },
   {
     id: 2,
-    site: `https://crickety.herokuapp.com/`,
-    tools: [
-      <Rails />,
-      <ReAct />,
-      <Foundation />,
-      <ReactRouter />,
-      <ActiveRecord />,
-      <Rspec />,
-      <Enzyme />,
-      <Oauth />,
-    ],
-    description: `A scoring app for the dart game Cricket that allows
-    players to record their play. In the spirit of
-    competitiveness, players can track matches across
-    time, who played whom, and even pause play to resume
-    matches at a later date.`,
-    image: cricket,
-    video: null,
-  },
-  {
-    id: 3,
-    site: `http://tv-reviews.herokuapp.com/`,
-    tools: [
-      <Rails />,
-      <ReAct />,
-      <Foundation />,
-      <ReactRouter />,
-      <ActiveRecord />,
-      <Rspec />,
-      <Enzyme />,
-      <Jasmine />,
-    ],
-    description: `As a member of a team of four at Launch Academy
-    tasked with building an app in a production
-    environment, I contrbuted to the design, development
-    and final deployment of TV a la Carte. Guided by
-    Agile methodology, and ensuring best practices such
-    as adhereance to TDD, almost all of the code was
-    collobratively written through peer programing. The
-    site caters to sharing TV reviews in an open forum.`,
-    image: tvReviews,
-    video: null,
-  },
-  {
-    id: 4,
     site: `http://ready-about.herokuapp.com/`,
     tools: [
       <Node />,
@@ -115,5 +70,50 @@ export const projectData = [
     and sound effects.`,
     image: null,
     video: true,
+  },
+  {
+    id: 3,
+    site: `https://crickety.herokuapp.com/`,
+    tools: [
+      <Rails />,
+      <ReAct />,
+      <Foundation />,
+      <ReactRouter />,
+      <ActiveRecord />,
+      <Rspec />,
+      <Enzyme />,
+      <Oauth />,
+    ],
+    description: `A scoring app for the dart game Cricket that allows
+    players to record their play. In the spirit of
+    competitiveness, players can track matches across
+    time, who played whom, and even pause play to resume
+    matches at a later date.`,
+    image: cricket,
+    video: null,
+  },
+  {
+    id: 4,
+    site: `http://tv-reviews.herokuapp.com/`,
+    tools: [
+      <Rails />,
+      <ReAct />,
+      <Foundation />,
+      <ReactRouter />,
+      <ActiveRecord />,
+      <Rspec />,
+      <Enzyme />,
+      <Jasmine />,
+    ],
+    description: `As a member of a team of four at Launch Academy
+    tasked with building an app in a production
+    environment, I contrbuted to the design, development
+    and final deployment of TV a la Carte. Guided by
+    Agile methodology, and ensuring best practices such
+    as adhereance to TDD, almost all of the code was
+    collobratively written through peer programing. The
+    site caters to sharing TV reviews in an open forum.`,
+    image: tvReviews,
+    video: null,
   },
 ];
