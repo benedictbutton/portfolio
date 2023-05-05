@@ -41,7 +41,7 @@ export const projectData = [
     emphasis on rating movies quickly and categorizing
     them through any number of freely created
     watchlists, persisting user specific data to my own
-    database. The third movie in the picture shows a
+    database. The last movie in the first row in the screenshot shows a
     movie being rated and added to the user's active
     playlist.`,
     image: moviesScene,
