@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Technologies from './Technologies';
 import { projectData } from '../Data/projectData';
 
@@ -140,10 +141,7 @@ const Projects = () => {
               data-slide="prev"
               onClick={() => setCount(0)}
             >
-              <span
-                className="carousel-control-prev-icon"
-                aria-hidden="true"
-              />
+              <FontAwesomeIcon icon="fa-solid fa-chevron-left" />
               <span className="sr-only">Previous</span>
             </a>
             <a
@@ -153,10 +151,7 @@ const Projects = () => {
               data-slide="next"
               onClick={() => setCount(0)}
             >
-              <span
-                className="carousel-control-next-icon pointer"
-                aria-hidden="true"
-              />
+              <FontAwesomeIcon icon="fa-solid fa-chevron-right" />
               <span className="sr-only">Next</span>
             </a>
           </div>

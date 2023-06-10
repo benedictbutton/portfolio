@@ -198,6 +198,24 @@
   background-color: #1382fe !important;
 }
 
+.carousel-control-prev {
+  background: transparent !important;
+  opacity: 1 !important;
+}
+
+.fa-chevron-left {
+  color: #1382fe;
+}
+
+.carousel-control-next {
+  background: transparent !important;
+  opacity: 1 !important;
+}
+
+.fa-chevron-right {
+  color: #1382fe;
+}
+
 // cross-fade
 .cross-fade-leave {
   opacity: 1;

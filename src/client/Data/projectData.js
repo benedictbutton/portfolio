@@ -6,8 +6,9 @@ import Foundation from '../assets/icons/Foundation';
 import GraphQL from '../assets/icons/GraphQL';
 import Jasmine from '../assets/icons/Jasmine';
 import Material from '../assets/icons/Material';
-import Nextjs from '../assets/icons/Nextjs';
 import MongoDb from '../assets/icons/MongoDb';
+import Nextjs from '../assets/icons/Nextjs';
+import NextAuth from '../assets/icons/NextAuth';
 import Node from '../assets/icons/Node';
 import Oauth from '../assets/icons/Oauth';
 import Postgres from '../assets/icons/Postgres';
@@ -32,6 +33,7 @@ export const projectData = [
       <Nextjs />,
       <ReAct />,
       <GraphQL />,
+      <NextAuth />,
       <Postgres />,
       <Tailwind />,
     ],

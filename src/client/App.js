@@ -5,6 +5,8 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faBriefcase,
+  faChevronLeft,
+  faChevronRight,
   faGraduationCap,
   faHammer,
   faPlusCircle,
@@ -26,6 +28,8 @@ import Resume from './components/Resume';
 
 library.add(
   faArrowAltCircleRight,
+  faChevronLeft,
+  faChevronRight,
   faEnvelope,
   faLinkedin,
   faGithub,

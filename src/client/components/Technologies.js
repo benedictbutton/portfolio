@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-const Technologies = props => {
-  let tools = props.tools.map((tool, index) => {
+const Technologies = ({ tools }) => {
+  let toolItems = tools.map((tool, index) => {
     return (
-      <div className="col" key={index}>
+      <div className="col text-center" key={index}>
         {tool}
       </div>
     );
@@ -17,7 +17,10 @@ const Technologies = props => {
       aria-labelledby="modalCenterTitle"
       aria-hidden="true"
     >
-      <div className="modal-dialog modal-dialog-centered" role="document">
+      <div
+        className="modal-dialog modal-dialog-centered"
+        role="document"
+      >
         <div className="modal-content bg-dark">
           <div className="modal-header">
             <h5 className="modal-title" id="modalCenterTitle">
@@ -34,7 +37,7 @@ const Technologies = props => {
           </div>
           <div className="modal-body">
             <div className="row justify-content-around align-items-center">
-              {tools}
+              {toolItems}
             </div>
           </div>
           <div className="modal-footer">
