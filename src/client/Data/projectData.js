@@ -3,8 +3,10 @@ import ActiveRecord from '../assets/icons/ActiveRecord';
 import Enzyme from '../assets/icons/Enzyme';
 import Express from '../assets/icons/Express';
 import Foundation from '../assets/icons/Foundation';
+import GraphQL from '../assets/icons/GraphQL';
 import Jasmine from '../assets/icons/Jasmine';
 import Material from '../assets/icons/Material';
+import Nextjs from '../assets/icons/Nextjs';
 import MongoDb from '../assets/icons/MongoDb';
 import Node from '../assets/icons/Node';
 import Oauth from '../assets/icons/Oauth';
@@ -16,6 +18,7 @@ import Redux from '../assets/icons/Redux';
 import ReduxForms from '../assets/icons/ReduxForms';
 import ReduxSaga from '../assets/icons/ReduxSaga';
 import Rspec from '../assets/icons/Rspec';
+import Tailwind from '../assets/icons/Tailwind';
 
 import moviesScene from '../assets/Movies-Scene.png';
 import cricket from '../assets/Cricket.png';
@@ -26,15 +29,11 @@ export const projectData = [
     id: 1,
     site: `https://github.com/benedictbutton/atlas`,
     tools: [
-      <Rails />,
+      <Nextjs />,
       <ReAct />,
-      <Redux />,
-      <Material />,
-      <ReactRouter />,
+      <GraphQL />,
       <Postgres />,
-      <ActiveRecord />,
-      <ReduxSaga />,
-      <ReduxForms />,
+      <Tailwind />,
     ],
     description: `A work in progress as my latest personal project, this fun
     endeavor creates a dynamic world map to test my geographical
