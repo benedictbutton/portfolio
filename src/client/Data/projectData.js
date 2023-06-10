@@ -24,6 +24,32 @@ import tvReviews from '../assets/Tv-Reviews.png';
 export const projectData = [
   {
     id: 1,
+    site: `https://github.com/benedictbutton/atlas`,
+    tools: [
+      <Rails />,
+      <ReAct />,
+      <Redux />,
+      <Material />,
+      <ReactRouter />,
+      <Postgres />,
+      <ActiveRecord />,
+      <ReduxSaga />,
+      <ReduxForms />,
+    ],
+    description: `A work in progress as my latest personal project, this fun
+    endeavor creates a dynamic world map to test my geographical
+    knowledge of countries. To date, my efforts have focused on
+    leveraging CSS animations & transitions with an eye toward
+    minimal necessary renderings. Nextjs provides server-side
+    rendering with a React component-based UI on the frontend and
+    with NextAuth handling authentication. While not yet deployed,
+    the source code is available on Github.`,
+    image: null,
+    video:
+      'https://www.dropbox.com/s/kdm896u0xp07uh6/Screen%20Recording%202023-06-09%20at%201.11.10%20PM.mov?raw=1',
+  },
+  {
+    id: 2,
     site: `https://movies-scene.herokuapp.com`,
     tools: [
       <Rails />,
@@ -48,7 +74,7 @@ export const projectData = [
     video: null,
   },
   {
-    id: 2,
+    id: 3,
     site: `http://ready-about.herokuapp.com/`,
     tools: [
       <Node />,
@@ -69,10 +95,11 @@ export const projectData = [
     Additionally, the app includes some cool animation
     and sound effects.`,
     image: null,
-    video: true,
+    video:
+      'https://www.dropbox.com/s/8kp6pquz8ns5jh8/Screen%20Recording%202023-05-04%20at%202.25.58%20AM.mov?raw=1',
   },
   {
-    id: 3,
+    id: 4,
     site: `https://crickety.herokuapp.com/`,
     tools: [
       <Rails />,
@@ -93,7 +120,7 @@ export const projectData = [
     video: null,
   },
   {
-    id: 4,
+    id: 5,
     site: `http://tv-reviews.herokuapp.com/`,
     tools: [
       <Rails />,

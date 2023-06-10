@@ -52,7 +52,7 @@ const Projects = () => {
                           height: '100%',
                         }}
                       >
-                        <source src="https://www.dropbox.com/s/8kp6pquz8ns5jh8/Screen%20Recording%202023-05-04%20at%202.25.58%20AM.mov?raw=1"></source>
+                        <source src={video}></source>
                       </video>
                     </div>
                   )}
@@ -125,6 +125,11 @@ const Projects = () => {
               <li
                 data-target="#carouselIndicators"
                 data-slide-to="3"
+                onClick={() => setCount(0)}
+              />
+              <li
+                data-target="#carouselIndicators"
+                data-slide-to="4"
                 onClick={() => setCount(0)}
               />
             </ol>
