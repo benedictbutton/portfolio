@@ -38,18 +38,18 @@ const Skills = () => {
               <h4 className="card-header text-center">Languages</h4>
               <div className="card-body container p-0">
                 <div className="container skills">
-                  <div className="row justify-content-around align-items-center">
-                    <div className="col text-center">
+                  <div className="row h-100 justify-content-around align-items-center">
+                    <div className="col-6 col-lg-3 text-center">
                       <Javascript />
                     </div>
-                    <div className="col text-center">
+                    <div className="col-6 col-lg-3 text-center">
                       <Ruby />
                     </div>
                     <div className="w-100" />
-                    <div className="col text-center">
+                    <div className="col-6 col-lg-3 text-center">
                       <Html />
                     </div>
-                    <div className="col text-center">
+                    <div className="col-6 col-lg-3 text-center">
                       <Css />
                     </div>
                   </div>
@@ -63,27 +63,27 @@ const Skills = () => {
               </h4>
               <div className="card-body p-0">
                 <div className="container">
-                  <div className="row justify-content-around align-items-center">
-                    <div className="col text-center">
+                  <div className="row h-100 justify-content-around align-items-center">
+                    <div className="col-6 col-xl-3 text-center">
                       <Rails />
                     </div>
-                    <div className="col text-center">
+                    <div className="col-6 col-xl-3 text-center">
                       <ReAct />
                     </div>
-                    <div className="col text-center">
+                    <div className="col-6 col-xl-3 text-center">
                       <Node />
                     </div>
                     <div className="w-100 mb-2" />
-                    <div className="col text-center">
+                    <div className="col-6 col-xl-3 text-center">
                       <Redux />
                     </div>
-                    <div className="col text-center">
+                    <div className="col-6 col-xl-3 text-center">
                       <Nextjs />
                     </div>
-                    <div className="col text-center">
+                    <div className="col-6 col-xl-3 text-center">
                       <Express />
                     </div>
-                    <div className="col text-center">
+                    <div className="col-6 col-xl-3 text-center">
                       <Jquery />
                     </div>
                   </div>
@@ -97,7 +97,7 @@ const Skills = () => {
               </h4>
               <div className="card-body p-0">
                 <div className="container">
-                  <div className="row justify-content-around align-items-center">
+                  <div className="row h-100 justify-content-around align-items-center">
                     <div className="col text-center">
                       <Bootstrap />
                     </div>
@@ -124,7 +124,7 @@ const Skills = () => {
               <h4 className="card-header text-center">Testing</h4>
               <div className="card-body py-1">
                 <div className="container">
-                  <div className="row justify-content-around align-items-center">
+                  <div className="row h-100 justify-content-around align-items-center">
                     <div className="col text-center">
                       <Rspec />
                     </div>
@@ -149,7 +149,7 @@ const Skills = () => {
               </h4>
               <div className="card-body p-0">
                 <div className="container">
-                  <div className="row justify-content-around align-items-center">
+                  <div className="row h-100 justify-content-around align-items-center">
                     <div className="col text-center">
                       <Postgres />
                     </div>
@@ -177,7 +177,7 @@ const Skills = () => {
               </h4>
               <div className="card-body p-0">
                 <div className="container">
-                  <div className="row justify-content-around align-items-center">
+                  <div className="row h-100 justify-content-around align-items-center">
                     <div className="col text-center">
                       <ReactRouter />
                     </div>

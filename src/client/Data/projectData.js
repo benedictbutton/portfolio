@@ -68,7 +68,7 @@ export const projectData = [
     emphasis on rating movies quickly and categorizing
     them through any number of freely created
     watchlists, persisting user specific data to my own
-    database. The last movie in the first row in the screenshot shows a
+    database. The last movie in the first row of the screenshot shows a
     movie being rated and added to the user's active
     playlist.`,
     image: moviesScene,
@@ -137,7 +137,7 @@ export const projectData = [
     tasked with building an app in a production
     environment, I contrbuted to the design, development
     and final deployment of TV a la Carte. Guided by
-    Agile methodology, and ensuring best practices such
+    Agile methodology and ensuring best practices such
     as adhereance to TDD, almost all of the code was
     collobratively written through peer programing. The
     site caters to sharing TV reviews in an open forum.`,

@@ -13,7 +13,7 @@ const Home = () => {
     <>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-sm-9 header">
+          <div className="col-lg-9 col-sm-12 header">
             <div className="container">
               <div className="row">
                 <div className="col-sm-12">
@@ -25,10 +25,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-3 sub-header">
+          <div className="col-lg-3 col-sm-12 sub-header">
             <div className="container">
               <div className="row mt-2 justify-content-center">
-                <div className="col-4 text-center">
+                <div className="col-4 col-sm-2 text-center">
                   <a href="https://www.linkedin.com/in/benedictdaly/">
                     <FontAwesomeIcon
                       icon={['fab', 'linkedin']}
@@ -37,7 +37,7 @@ const Home = () => {
                     />
                   </a>
                 </div>
-                <div className="col-4 text-center">
+                <div className="col-4 col-sm-2 text-center">
                   <a href="https://github.com/benedictbutton">
                     <FontAwesomeIcon
                       icon={['fab', 'github']}
