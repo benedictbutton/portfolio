@@ -7,7 +7,7 @@
   },
   "scripts": {
     "build": "webpack --mode=production",
-    "start": "yarn build && node -r newrelic src/server/index.js",
+    "start": "yarn build && node src/server/index.js",
     "client": "webpack-dev-server --mode=development",
     "server": "nodemon src/server/index.js",
     "dev": "concurrently \"yarn server\" \"yarn client\"",
