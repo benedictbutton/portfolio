@@ -47,7 +47,7 @@ export const projectData = [
     the source code is available on Github.`,
     image: null,
     video:
-      'https://www.dropbox.com/s/kdm896u0xp07uh6/Screen%20Recording%202023-06-09%20at%201.11.10%20PM.mov?raw=1',
+      'https://www.dropbox.com/s/mezgci4c8dbr730/Screen%20Recording%202023-06-13%20at%203.59.07%20PM.mov?raw=1',
   },
   {
     id: 2,
