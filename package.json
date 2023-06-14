@@ -7,7 +7,7 @@
   },
   "scripts": {
     "build": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode=production ",
-    "start": "yarn build && node src/server/index.js",
+    "start": "yarn build && node -r newrelic src/server/index.js",
     "client": "NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server --mode=development",
     "server": "nodemon src/server/index.js",
     "dev": "concurrently \"yarn server\" \"yarn client\"",
