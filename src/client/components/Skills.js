@@ -2,6 +2,7 @@ import React from 'react';
 import ActiveRecord from '../assets/icons/ActiveRecord';
 import Bootstrap from '../assets/icons/Bootstrap';
 import Css from '../assets/icons/Css';
+import Docker from '../assets/icons/Docker';
 import Enzyme from '../assets/icons/Enzyme';
 import Express from '../assets/icons/Express';
 import Foundation from '../assets/icons/Foundation';
@@ -165,6 +166,9 @@ const Skills = () => {
                     </div>
                     <div className="col text-center">
                       <Git />
+                    </div>
+                    <div className="col text-center">
+                      <Docker />
                     </div>
                   </div>
                 </div>

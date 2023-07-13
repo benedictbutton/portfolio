@@ -1,5 +1,6 @@
 import React from 'react';
 import ActiveRecord from '../assets/icons/ActiveRecord';
+import Docker from '../assets/icons/Docker';
 import Enzyme from '../assets/icons/Enzyme';
 import Express from '../assets/icons/Express';
 import Foundation from '../assets/icons/Foundation';
@@ -28,7 +29,7 @@ import tvReviews from '../assets/Tv-Reviews.png';
 export const projectData = [
   {
     id: 1,
-    site: `https://github.com/benedictbutton/atlas`,
+    site: `https://bens-atlas.fly.dev`,
     tools: [
       <Nextjs />,
       <ReAct />,
@@ -36,15 +37,17 @@ export const projectData = [
       <NextAuth />,
       <Postgres />,
       <Tailwind />,
+      <Docker />,
     ],
-    description: `A work in progress as my latest personal project, this fun
-    endeavor creates a dynamic world map to test my geographical
-    knowledge of countries. To date, my efforts have focused on
-    leveraging CSS animations & transitions with an eye toward
-    minimal necessary renderings. Nextjs provides server-side
-    rendering with a React component-based UI on the frontend and
-    with NextAuth handling authentication. While not yet deployed,
-    the source code is available on Github.`,
+    description: `A work in progress as my latest personal
+    project, this fun endeavor creates a dynamic world map
+    to test my geographical knowledge of countries. To date,
+    my efforts have focused on leveraging CSS animations &
+    transitions with an eye toward minimal renderings.
+    Nextjs provides server-side rendering with a React
+    component-based UI and with NextAuth handling
+    authentication. For deployment, I containerized my app
+    and database with Docker and run the images on fly.io.`,
     image: null,
     video:
       'https://www.dropbox.com/s/mezgci4c8dbr730/Screen%20Recording%202023-06-13%20at%203.59.07%20PM.mov?raw=1',
