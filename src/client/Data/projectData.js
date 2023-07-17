@@ -50,7 +50,7 @@ export const projectData = [
     and database with Docker and run the images on fly.io.`,
     image: null,
     video:
-      'https://www.dropbox.com/s/mezgci4c8dbr730/Screen%20Recording%202023-06-13%20at%203.59.07%20PM.mov?raw=1',
+      'https://www.dropbox.com/s/o8wowgc4evzu4fk/Screen%20Recording%202023-07-16%20at%2011.04.46%20PM.mov?raw=1',
   },
   {
     id: 2,
