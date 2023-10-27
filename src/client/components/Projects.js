@@ -64,18 +64,21 @@ const Projects = () => {
                   >
                     <h5>Site:</h5>
                     <p className="sm-font">
-                      <a
-                        href={site}
-                        alt="link to project"
-                        className="text-white"
-                        style={{
-                          textDecoration:
-                            id !== 4 && 'solid underline #007bff 3px',
-                          textUnderlineOffset: '5px',
-                        }}
-                      >
-                        {site}
-                      </a>
+                      {id === 5 && <span>{site}</span>}
+                      {id !== 5 && (
+                        <a
+                          href={site}
+                          alt="link to project"
+                          className="text-white"
+                          style={{
+                            textDecoration:
+                              'solid underline #007bff 3px',
+                            textUnderlineOffset: '5px',
+                          }}
+                        >
+                          {site}
+                        </a>
+                      )}
                     </p>
                     <h5>Description:</h5>
                     <p className="sm-font text-justify text-wrap">

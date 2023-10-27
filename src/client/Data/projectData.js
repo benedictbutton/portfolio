@@ -137,13 +137,12 @@ export const projectData = [
       <Jasmine />,
     ],
     description: `As a member of a team of four at Launch Academy
-    tasked with building an app in a production
-    environment, I contrbuted to the design, development
-    and final deployment of TV a la Carte. Guided by
-    Agile methodology and ensuring best practices such
-    as adhereance to TDD, almost all of the code was
-    collobratively written through peer programing. The
-    site caters to sharing TV reviews in an open forum.`,
+    tasked with building an app in a production environment, I
+    contributed to the design, development and final deployment of
+    TV a la Carte. Guided by Agile methodology, and ensuring best
+    practices such as adherence to TDD, almost all the code was
+    collaboratively written through peer programing. The site
+    caters to sharing TV reviews in an open forum.`,
     image: tvReviews,
     video: null,
   },
