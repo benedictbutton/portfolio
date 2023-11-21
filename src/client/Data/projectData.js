@@ -79,7 +79,7 @@ export const projectData = [
   },
   {
     id: 3,
-    site: `http://ready-about.herokuapp.com/`,
+    site: `https://ready-about.herokuapp.com/`,
     tools: [
       <Node />,
       <Express />,
